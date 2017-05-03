@@ -1,0 +1,135 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  //border: 1px solid blue;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+$main-font: 'Lato', sans-serif;
+
+body {
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 20px;
+}
+
+/*Start Hamburger Menu*/
+
+.hamburger {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-19px, 16px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*End Hamburger Menu*/
+
+
+.page-nav .navigation {
+  display: none;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  position: fixed;
+  li {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font: 300 2rem $main-font;
+}
+  a {
+    margin-top: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 5rem;
+  }
+}
+
+
+.nav-opened .navigation {
+  display: block;
+  background: rgba(255, 255, 255, 0.6);
+  position: relative;
+  transition-duration: 3s;
+}
+
+.fa-phone{
+  color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+}
+
+.fa-envelope {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+}
+
+
+.about {
+  margin-top: 70px;
+  position: relative;
+  h2{
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0 0 20px;
+  }
+  p {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 20px;
+  }
+}
+
+.portfolio {
+  h2{
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 20px 0 0 20px;
+  }
+  p {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 20px;
+  }
+}
