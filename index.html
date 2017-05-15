@@ -1,75 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-    <script src="https://use.fontawesome.com/919bfd49b6.js"></script>
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="hamburger">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <nav class="page-nav">
-        <ul class="navigation">
-          <li><a href="#about" class="scrollTo">O mnie</a></li>
-          <li><a href="#technologies" class="scrollTo">Z czego korzystam</a></li>
-          <li><a href="#portfolio" class="scrollTo">Moje projekty</a></li>
-          <li><a href="#contact" class="scrollTo">Kontakt</a></li>
-          <li><a href="tel:+48737470131"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
-          <li><a href="mailto:sergii.brusnyk@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-        </ul>
-      </nav>
-      <h1>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Moja strona</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+  <script src="https://use.fontawesome.com/919bfd49b6.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="hamburger">
+      <div class="part1"></div>
+      <div class="part2"></div>
+      <div class="part3"></div>
+    </div>
+    <nav class="page-nav">
+      <ul class="navigation">
+        <li><a href="#about" class="scrollTo">O mnie</a></li>
+        <li><a href="#technologies" class="scrollTo">Z czego korzystam</a></li>
+        <li><a href="#portfolio" class="scrollTo">Moje projekty</a></li>
+        <li><a href="#contact" class="scrollTo">Kontakt</a></li>
+        <li><a href="tel:+48737470131"><i class="fa fa-phone" aria-hidden="true"></i></a></li>
+        <li><a href="mailto:sergii.brusnyk@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h1 class="logo">
         <img src="./images/logo_mobile_white.png" alt="">
       </h1>
-    </header>
-    <section id="about" class="about">
-      <div class="wrapper">
-        <h2>About me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="wrapper">
+      <h2>Witam,</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <form method="get" action="../images/cv.pdf">
+        <button type="submit" class="download">Moje CV</button>
+      </form>
+    </div>
+  </section>
+  <div id="technologies" class="technologies">
+    <div class="wrapper">
+      <h3>Z czego korzystam</h3>
+      <ul class="logos">
+        <li><i class="devicon-html5-plain-wordmark"></i></li>
+        <li><i class="devicon-javascript-plain"></i></li>
+        <li><i class="devicon-gulp-plain"></i></li>
+        <li><i class="devicon-css3-plain-wordmark"></i></li>
+        <li><i class="devicon-jquery-plain-wordmark"></i></li>
+        <li><i class="devicon-github-plain-wordmark"></i></li>
+        <li><i class="devicon-sass-original"></i></li>
+        <li><i class="devicon-photoshop-line"></i></li>
+      </ul>
+    </div>
+  </div>
+  <section id="portfolio" class="portfolio">
+    <div class="wrapper">
+      <h4>Moje projekty</h4>
+      <div class="container">
+        <div><img src="./images/test1.jpg" alt=""></div>
+        <div class="overlay">
+          <div class="text">
+            <p>Test project</p>
+            <span>Zobacz kod na GitHub</span>
+            <a href="http://google.com" target="_blank"><i class="devicon-github-plain"></i></a>
+          </div>
+        </div>
       </div>
-    </section>
-    <div id="technologies" class="technologies">
-      <div class="wrapper">
-        <h3>Z czego korzystam</h3>
-        <ul>
-          <li><i class="devicon-html5-plain-wordmark"></i></li>
-          <li><i class="devicon-javascript-plain"></i></li>
-          <li><i class="devicon-gulp-plain"></i></li>
-          <li><i class="devicon-css3-plain-wordmark"></i></li>
-          <li><i class="devicon-jquery-plain-wordmark"></i></li>
-          <li><i class="devicon-github-plain-wordmark"></i></li>
-          <li><i class="devicon-sass-original"></i></li>
-          <li><i class="devicon-photoshop-line"></i></li>
-        </ul>
+      <div class="container">
+        <div><img src="./images/test3.jpg" alt=""></div>
+        <div class="overlay">
+          <div class="text">
+            <p>Test project</p>
+            <span>Zobacz kod na GitHub</span>
+            <a href="http://google.com" target="_blank"><i class="devicon-github-plain"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div><img src="./images/test2.jpg" alt=""></div>
+        <div class="overlay">
+          <div class="text">
+            <p>Test project</p>
+            <span>Zobacz kod na GitHub</span>
+            <a href="http://google.com" target="_blank"><i class="devicon-github-plain"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-    <section id="portfolio" class="portfolio">
-      <div class="wrapper">
-        <h4>Portfolio</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+  <section id="contact" class="contact">
+    <div class="wrapper">
+      <h5>Kontakt</h5>
+      <dl>
+        <dt>
+            <a href="tel:+48737470131"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <span>+48 737 470 131</span>
+          </dt>
+        <dd>
+          <!-- +48 737 470 131 -->
+        </dd>
+        <dt>
+            <a href='mailto:sergii.brusnyk@gmail.com'><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <span>sergii.brusnyk@gmail.com</span>
+          </dt>
+        <dd>
+          <!-- sergii.brusnyk@gmail.com -->
+        </dd>
+      </dl>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/sergii-brusnyk-60475245/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/s.brusnyk"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://github.com/sergiibrusnyk"><i class="fa fa-github" aria-hidden="true"></i></a>
       </div>
-    </section>
-    <section id="contact" class="contact">
-      <div class="wrapper">
-        <h5>Contact me</h5>
-        <a href="tel:+48737470131"><i class="fa fa-phone" aria-hidden="true"> +48 737 470 131</i></a>
-        <a href='mailto:sergii.brusnyk@gmail.com'<i class="fa fa-envelope" aria-hidden="true"> sergii.brusnyk@gmail.com</i></a>
-        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"> LinkedIn</i></a>
-      </div>
-    </section>
-    <footer>
-      <div class="wrapper">
+    </div>
+  </section>
+  <footer>
+    <div class="wrapper">
       2017 &copy; Sergii Brusnyk.
     </div>
-    </footer>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+  </footer>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
 </html>
